@@ -1,0 +1,15 @@
+/* Catch all to ensure max-width is correct*/
+* {
+    box-sizing: border-box;
+
+}
+
+.color {color: #0000ff;}
+
+.midbox {
+    border: 2px solid black;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
