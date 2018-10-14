@@ -1,15 +1,64 @@
-/* Catch all to ensure max-width is correct*/
-* {
-    box-sizing: border-box;
-
+/* Styles */
+body{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-image: url(../img/thomas-jensen-596085-unsplash.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
-.color {color: #0000ff;}
-
-.midbox {
-    border: 2px solid black;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+#pageTitle {
+  text-align: center;
+  font-size: 70px;
+  color: #ffffff;
 }
+
+#bioBox {
+  display: flex;
+  flex-direction: column;
+}
+
+p:first-child {
+  display: flex;
+  background-color: teal;
+  font-size: larger;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+#personalPhoto {
+  max-height: 350px;
+
+  max-width: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  /* =====================
+      Media Queries
+   =====================*/
+  /* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
+  }
+
+  /* Smaall Screens to 768px ----------- */
+  @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    /* Styles */
+  }
+
+  /* Desktop to 1024 ----------- */
+  @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+
+    /* Styles */
+    body {
+      /*justify-content: center;
+        align-items: center;*/
+      height: 400px;
+      width: 100%;
+    }
+  }

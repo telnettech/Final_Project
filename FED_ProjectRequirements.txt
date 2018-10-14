@@ -1,0 +1,36 @@
+CodeLouisville Project FDE
+
+Due 11/16 at noon
+
+responsive to different device sizes
+include custom CSSS, at least 3 class and or id selectors- located in CSS file
+includes custom Javascript, at least 1 function- located in JS file
+includes comments in your code
+includes Readme file with description of project and instructions to run it
+all working code on GitHub in a repository --NO EXTENSIONS--
+No asset swaps--must be something unique
+Project should be something your proud of and demostrates your base knowledge in the concepts you have learned
+
+Dont reinvent the wheels
+Dont get hung up on content
+Fewer features are better
+Test it
+Make sure that it runs on someone's computers, not just yours
+
+
+
+Week 6 homework
+
+Take a piece of paper and do a skeleton for your final project.
+  --Create a wireframe (bunch of boxes drawing to present your project)
+  --Check out Adobe xd, basalmic, and sketch are free tools. Other options includes a napkin and crayon.
+  --Do either Desktop or mobile down (if time)
+
+
+Some Project ideas
+  --Personal/portfolio web page
+  --a form where after looking at my skill set, someone can leave feedback on future skills for me to work on.
+  --atomic clock on it.
+  --interactive drop down of company name showing what my jd was, and key achievements.
+  --password safe.
+  -- link for wireframe: https://xd.adobe.com/view/8fa0af95-d63a-48a1-7cb7-ee072ee79529-f991/?fullscreen&hints=off
