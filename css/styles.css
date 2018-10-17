@@ -1,40 +1,48 @@
 /* Styles */
 body{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  margin-left 65px;
   background-image: url(../img/thomas-jensen-596085-unsplash.jpg);
   background-repeat:no-repeat;
   background-size:cover;
+
 }
 
 #pageTitle {
   text-align: center;
+  margin-left: 215px;
   font-size: 70px;
   color: #ffffff;
 }
 
-#bioBox {
-  display: flex;
-  flex-direction: column;
+.bioBox {
+  display: inline-flex;
+  column-count: 3;
+  margin-left: 65px;
+  
 }
 
-p:first-child {
-  display: flex;
+
+#aboutMe {
   background-color: teal;
-  font-size: larger;
+  font-size: x-large;
   color: #fff;
-  flex-wrap: wrap;
+  float: left;
+  width: 250px;
+  /* margin-left: 65px; */
+  word-wrap: break-word;
 }
+
+
 
 #personalPhoto {
   max-height: 350px;
-
   max-width: 500px;
   border-radius: 50%;
   overflow: hidden;
   display: block;
-  margin-left: auto;
+  margin-left: 200px;
   margin-right: auto;
 
 
@@ -52,7 +60,7 @@ p:first-child {
   }
 
   /* Desktop to 1024 ----------- */
-  @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+  /* @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
 
     /* Styles */
     body {
@@ -61,4 +69,4 @@ p:first-child {
       height: 400px;
       width: 100%;
     }
-  }
+  } */
