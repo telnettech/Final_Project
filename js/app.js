@@ -35,27 +35,39 @@ function checkTime(i) {
 // END CLOCK SCRIPT
 
 // START BACKGROUND IMAGE
+// https://css-tricks.com/forums/topic/change-body-background-every-10-sec/
 
-// var images=['../img/thomas-jensen-596085-unsplash.png',
-//             '../img/markus-spiske-207946-unsplash.png',
-//             '../img/markus-spiske-357131-unsplash.png',
-//             '../img/110-PunchDown-Block.jpg'
-//           ];
-//
-// for (var = i; i<images.length; i++){
-//   	body.style.backgroundImage(url(images[i]));
-// }
+$(function() {
+    var body = $('body');
+    var backgrounds = [
+url('../img/thomas-jensen-596085-unsplash.jpg'),
+url('../img/markus-spiske-207946-unsplash.jpg'),
+url('../img/markus-spiske-357131-unsplash.jpg'),
+url('../img/110-PunchDown-Block.jpg')
+    ];
+var current = 0;
 
+function nextBackground() {
+body.css(
+'backgroundImage',
+backgrounds[current = ++current % backgrounds.length]
+);
 
-// var url=0;
-//
-// setInterval(function(){
-//    url+=1;
-//   if(url==4){
-//     url=0;
-//   }
-//   document.body.style.backgroundImage = 'url('+images[url]+')';
-//   // document.body.style.backgroundRepeat = "no-repeat";
-// },3000);
+setTimeout(nextBackground, 10000);
+}
+setTimeout(nextBackground, 10000);
+body.css('backgroundImage', backgrounds[0]);
+});
 
 // END BACKGROUND IMAGE
+
+
+// START HAMBURGER MENU https://www.youtube.com/watch?v=JoU-Tv6jIUI
+
+// $(document).ready(function(){
+//     $('.menu').on('click', function(){
+//         $(this).find('.hamburgerIcon').toggleClass('open')
+//     });
+// });
+
+// END HAMBURGER MENU
