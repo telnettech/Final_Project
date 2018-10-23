@@ -1,5 +1,19 @@
 # Final_Project
 
+10/22/2018
+  --Added Hamburger Menu code, style and javascript.
+
+  Current Issues:
+  --CSS for each socialMedia link. Got to be a better way.
+	--Javascript to change backgroundImage not working.
+  --Hamburger Menu code not working.
+
+  To Do List:
+    --Create pages 2 thru 4 per wireframe or Modal Box for Nav Buttons?
+    --Form for "Suggestion" button.
+    --Media queries for 'Mobile First' approach.
+
+
 10/21/18 (Brian Simpson)
   --Added Nav buttons and styles with Columbus Crew colors
   --Added Social Media and links to urls
