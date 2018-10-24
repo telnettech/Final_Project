@@ -1,5 +1,20 @@
 # Final_Project
 
+10/24/2018
+  --Resolved Hamburger Menu javascript.
+  --Resolved Background image javascript.
+
+  Current Issues:
+    --Hamburger Menu doesnt rotate correctly.
+    --CSS for social media icons needs cleaned up.
+
+  To Do List:
+    --Create Modal boxes for buttons.
+    --Mobile first styling.
+    --Check out Font Awesome for social media icons.
+
+
+
 10/22/2018
   --Added Hamburger Menu code, style and javascript.
 

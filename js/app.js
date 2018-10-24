@@ -40,34 +40,35 @@ function checkTime(i) {
 $(function() {
     var body = $('body');
     var backgrounds = [
-url('../img/thomas-jensen-596085-unsplash.jpg'),
-url('../img/markus-spiske-207946-unsplash.jpg'),
-url('../img/markus-spiske-357131-unsplash.jpg'),
-url('../img/110-PunchDown-Block.jpg')
+"url('img/thomas-jensen-596085-unsplash.jpg')",
+"url('img/markus-spiske-207946-unsplash.jpg')",
+"url('img/markus-spiske-357131-unsplash.jpg')",
+"url('img/110-PunchDown-Block.jpg')"
     ];
 var current = 0;
 
 function nextBackground() {
 body.css(
-'backgroundImage',
-backgrounds[current = ++current % backgrounds.length]
+'background-image',
+backgrounds[++current % backgrounds.length]
 );
 
 setTimeout(nextBackground, 10000);
 }
 setTimeout(nextBackground, 10000);
-body.css('backgroundImage', backgrounds[0]);
+body.css('background-image', backgrounds[0]);
 });
 
 // END BACKGROUND IMAGE
 
 
-// START HAMBURGER MENU https://www.youtube.com/watch?v=JoU-Tv6jIUI
+// START HAMBURGER MENU  https://www.youtube.com/watch?v=JoU-Tv6jIUI
 
-// $(document).ready(function(){
-//     $('.menu').on('click', function(){
-//         $(this).find('.hamburgerIcon').toggleClass('open')
-//     });
-// });
+$(document).ready(function(){
+    $('.hamburgerIcon').click(function(){
+        console.log(this);
+        $(this).toggleClass('open')
+    });
+});
 
 // END HAMBURGER MENU
