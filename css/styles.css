@@ -84,7 +84,7 @@ body {
   border-radius: 50px;
   background-color: #231f20;
   transform: translate(-50%,-50%) rotate(0deg);
-    
+
 }
 
 .hamburgerIcon::before, .hamburgerIcon::after{
@@ -109,7 +109,7 @@ body {
 
 .open{
   transform: translate( -50%, -50%) rotate(135deg);
-  
+
 }
 .open::before{
   top: 0;
@@ -179,41 +179,19 @@ body {
     cursor: pointer;
 }
 
-#socialMedia{
-  /* margin-top: 150px; */
-  padding: 0;
+#companyName{
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#soicalMedia ul {
-    margin: 0;
-    padding: 0;
+.table{
+  display: flex;
+  flex-direction: row;
 }
 
-#socialMedia li {
-  float: left;
-  margin-left: 75px;
+.table ul{
   list-style: none;
 }
-
-#linkedIn{
-  margin-top: 130px;
-}
-
-#gitHub{
-  margin-top: 95px;
-}
-
-#email{
-  margin-top: 85px;
-}
-
-#twitter{
-  margin-top: 75px;
-}
-
-
-
-
 
   /* =====================
       Media Queries
