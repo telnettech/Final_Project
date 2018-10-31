@@ -69,7 +69,7 @@ body {
   width: 75px;
   position: relative;
   border: 1px solid #fff;
-  background-color: #231f20;
+  background-color: #fef200;
   top: 10%;
   left: 40%;
   transform: translate(-50%, -50%);
@@ -82,10 +82,9 @@ body {
   top: 50%;
   left: 50%;
   border-radius: 50px;
-  background-color: #fef200;
+  background-color: #231f20;
   transform: translate(-50%,-50%) rotate(0deg);
-  
-  
+    
 }
 
 .hamburgerIcon::before, .hamburgerIcon::after{
@@ -139,6 +138,43 @@ body {
 #nav button:hover, button:focus {
     color: #fef200; /** Columbus Crew Yellow **/
     background-color: #231f20; /** Columbus Crew Black **/
+}
+
+/* MODAL CONTENT STYLING */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #231f20; /* Fallback color */
+  opacity: 0.7;
+}
+
+.modal-content {
+  background-color: #fef200;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #fff;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #231f20;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #socialMedia{
