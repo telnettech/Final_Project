@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src='js/jquery-3.3.1.min.js'></script>
-  <script src='js/app.js'></script>
+  
 </head>
 
 <body onload = 'startTime()'>
@@ -23,6 +22,30 @@
       <p>
         Accomplished Voice Engineer with networking experience can effectively plan, install, configure, and optimize the telephone infrastructure to consistently achieve high availability and performance as both customer and service provider.
       </p>
+      <div id ='socialMedia'>
+        <ul>
+          <li id = 'linkedIn'>
+            <a href = 'http://linkedin.com/in/telnettech' target = 'blank'>
+                <img src= 'img/Logo-2CRev-28px-R.png' alt ='' height = "50" width = "200">
+              </a>
+            </li>
+          <li id = 'gitHub'>
+            <a href = 'https://github.com/telnettech' target = 'blank'>
+              <img src= 'img/GitHub_Logo_White.png' alt = '' height = "100" width = "100">
+            </a>
+          </li>
+          <li id = 'email'>
+            <a href = 'mailto:telnettech@gmail.com'>
+              <img src= 'img/icons8-email-64.png' alt = '' height = "100" width = "100">
+            </a>
+          </li>
+          <li id = 'twitter'>
+            <a href = 'https://twitter.com/lou_telnettech' target = 'blank'>
+              <img src= 'img/social-twitter-icon.png' alt = '' height = "100" width = "100">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div>
@@ -44,7 +67,7 @@
           </div>
         </div>
         <button id = 'myBtn'>My Resume</button>
-        <div id = 'MyResume' class ="modal">
+        <div id = 'myResume' class ="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
               <div>
@@ -67,22 +90,29 @@
                   <li>Installed/Configured Cisco CM express on a 2800 series router with Audiocode SBC to test SIP trunks for lab. This reduced the reliability of 3rd part vendor and shortened test time for product. Did same thing with Adtran 7100 PBX with Adtran SBC.</li>
                 </ul>
               </div>
+              <div>
+                <p id = 'companyName'>Lightyear Network Solutions</p>
+                <p id = 'jobTitle'>Senior Voice Engineer 07/2010 through 01/2014</p>
+                <ul>
+                  <p id = 'day2day'>Day to Day Responsibilities</p>
+                  <li>Provide Tier 3 support for Sylantro/Asterisk platform providing Service Provider services to residential and commercial customers. This includes troubleshooting complex production issues.</li>
+                  <li>Configure Cisco 2400 series IADs converting VoIP (SIP) to TDM handoff using T1, analog or PRI technology to customer pbx/key systems.</li>
+                  <li>Configure and Troubleshoot between company’s network and other SIP service providers for inbound/outbound calling. This includes 911 routing for customers.</li>
+                  <li>Maintain network security using Cisco ASA firewall and AcmePackets SBC.</li>
+                  <li>Maintain and administer MySQL database for CDR/Billing purposes.</li>
+                </ul>
+                <ul> 
+                  <p id = 'Contributions'>Key Contributions</p>
+                  <li>Tested, Certified and implemented company’s VoIP network conversion from Sylantro/Asterisk to FreeSwitch/Kamailio for both internal and external customers</li>
+                  <li>Improved network security using AcmePackets SBC reconfiguration.</li>
+                  <li>Migrated 300 business and 1700 customers from old Sylantro platform with minimal downtime for customers.</li>
+                  <li>Setup and trained Tier1 and Tier 2 maintenance group for troubleshooting VoIP (SIP).</li>
+                </ul>
+              </div>
           </div>
         </div>
         <button>My Skills</button>
-        <div id = 'MyResume' class ="modal">
-          <div class="modal-content">
-              <span class="close">&times;</span>
-          </div>
-        </div>
-        <button>Suggestion Box</button>
-        <div id = 'MyResume' class ="modal">
-          <div class="modal-content">
-              <span class="close">&times;</span>
-          </div>
-        </div>
-        <button>Social Media</button>
-        <div id = 'MyResume' class ="modal">
+        <div id = 'MySkills' class ="modal">
           <div class="modal-content">
               <span class="close">&times;</span>
           </div>
@@ -91,36 +121,10 @@
     </div>
   </div>
   </div>
-
-
-
+  <script src='js/jquery-3.3.1.min.js'></script>
+  <script src='js/app.js'></script>
 </body>
 
-<footer> <!-- Social Media Links start here -->
-  <div id ='socialMedia'>
-    <ul>
-      <li id = 'linkedIn'>
-        <a href = 'http://linkedin.com/in/telnettech' target = 'blank'>
-            <img src= 'img/Logo-2CRev-28px-R.png' alt ='' height = "50" width = "200">
-          </a>
-        </li>
-      <li id = 'gitHub'>
-        <a href = 'https://github.com/telnettech' target = 'blank'>
-          <img src= 'img/GitHub_Logo_White.png' alt = '' height = "100" width = "100">
-        </a>
-      </li>
-      <li id = 'email'>
-        <a href = 'mailto:telnettech@gmail.com'>
-          <img src= 'img/icons8-email-64.png' alt = '' height = "100" width = "100">
-        </a>
-      </li>
-      <li id = 'twitter'>
-        <a href = 'https://twitter.com/lou_telnettech' target = 'blank'>
-          <img src= 'img/social-twitter-icon.png' alt = '' height = "100" width = "100">
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
+
 
 </html>
