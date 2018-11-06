@@ -8,17 +8,18 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 </head>
 
-<body onload = 'startTime()'>
+<body onload='startTime()'>
 
   <h1 id='pageTitle'>
     Brian Simpson Portfolio
   </h1>
 
-  <div id ='bioBox'>
-    <div id = 'aboutMe'>
+  <div id='bioBox'>
+    <div id='aboutMe'>
       <p>
         Accomplished Voice Engineer with networking experience can effectively plan, install, configure, and optimize the telephone infrastructure to consistently achieve high availability and performance as both customer and service provider.
       </p>
@@ -28,123 +29,168 @@
       <img src='img/personal_photo2.jpg' id='personalPhoto'>
     </div>
 
-    <div id ='nav'>
+    <div id='nav'>
       <!--  Hamburger Menu https://www.youtube.com/watch?v=JoU-Tv6jIUI -->
-      <div class = 'container'>  
-          <div class = 'hamburgerMenu'>
-            <div class = 'hamburgerIcon'>
-            </div>
+      <div class='container'>
+        <div class='hamburgerMenu'>
+          <div class='hamburgerIcon'>
           </div>
         </div>
-        <div id="clockdate">
-          <div class="clockdate-wrapper">
-            <div id="clock"></div>
-            <div id="date"></div>
+      </div>
+      <div id="clockdate">
+        <div class="clockdate-wrapper">
+          <div id="clock"></div>
+          <div id="date"></div>
+        </div>
+      </div>
+      <button id='myBtn'>My Resume</button>
+      <div id='myResume' class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div>
+            <p id='companyName'>Centurylink</p>
+            <p id='jobTitle'>Lead Architect Tester 01/2014 through 12/2017 </p>
+            <ul>
+              <p id='day2day'>Day to Day Responsibilities</p>
+              <li>Worked in a simulated production environment in a lab facility.</li>
+              <li>Participate in projects as Voice SME.</li>
+              <li>Test and certify call scenarios including basic, Voicemail, Call Center, Receptionist, and SIP Trunking after software upgrades and patches.</li>
+              <li>Write and Review maintenance procedures for production team</li>
+              <li>Tier 3 support engineer for production team on troubleshooting production issues.</li>
+              <li>Work with vendors that included, Broadsoft, Cisco, CTI Group, Metaswitch to resolve complex issues.</li>
+            </ul>
+            <ul>
+              <p id='contributions'>Key Contributions</p>
+              <li>Evaluated and Implemented Call Recording platform that was HIPPA/PCI compliant.</li>
+              <li>Implemented Hosted Call Center service on hosted VoIP platform.</li>
+              <li>Tested, Certified and Supervised project that implemented SSL to secure 50K Polycom and Cisco cpe configuration files.</li>
+              <li>Installed/Configured Cisco CM express on a 2800 series router with Audiocode SBC to test SIP trunks for lab. This reduced the reliability of 3rd part vendor and shortened test time for product. Did same thing with Adtran 7100 PBX
+                with Adtran SBC.</li>
+            </ul>
+          </div>
+          <div>
+            <p id='companyName'>Lightyear Network Solutions</p>
+            <p id='jobTitle'>Senior Voice Engineer 07/2010 through 01/2014</p>
+            <ul>
+              <p id='day2day'>Day to Day Responsibilities</p>
+              <li>Provide Tier 3 support for Sylantro/Asterisk platform providing Service Provider services to residential and commercial customers. This includes troubleshooting complex production issues.</li>
+              <li>Configure Cisco 2400 series IADs converting VoIP (SIP) to TDM handoff using T1, analog or PRI technology to customer pbx/key systems.</li>
+              <li>Configure and Troubleshoot between company’s network and other SIP service providers for inbound/outbound calling. This includes 911 routing for customers.</li>
+              <li>Maintain network security using Cisco ASA firewall and AcmePackets SBC.</li>
+              <li>Maintain and administer MySQL database for CDR/Billing purposes.</li>
+            </ul>
+            <ul>
+              <p id='Contributions'>Key Contributions</p>
+              <li>Tested, Certified and implemented company’s VoIP network conversion from Sylantro/Asterisk to FreeSwitch/Kamailio for both internal and external customers</li>
+              <li>Improved network security using AcmePackets SBC reconfiguration.</li>
+              <li>Migrated 300 business and 1700 customers from old Sylantro platform with minimal downtime for customers.</li>
+              <li>Setup and trained Tier1 and Tier 2 maintenance group for troubleshooting VoIP (SIP).</li>
+            </ul>
+          </div>
+          <div>
+            <p id='companyName'>The Paragon Group</p>
+            <p id='jobTitle'>Contract Voice Engineer 01/2010 through 05/2010</p>
+            <ul>
+              <p id='day2day'>Day to Day Responsibilities</p>
+              <li>Configure CUCM ver 6.0 for branch offices for financial institution. This included both extensions and users (DID and nonDID).</li>
+              <li>Update Cisco 3700/3800 series router configs to include Dial Peers and SRST lines. </li>
+              <li>Update MSSQL database with correct information used to provide IVR and Auto Attendant functions.</li>
+              <li>Manage onsite tech and service provider work including installation of cpe and number porting. Test with onsite tech confirming branch was ready for next business day</li>
+            </ul>
+            <ul>
+              <p id='Contributions'>Key Contributions</p>
+              <li>Part of team that migrated 3000 branches nationwide 3 months early and below budget.</li>
+            </ul>
+          </div>
+          <div>
+            <p id='companyName'>The Paragon Group</p>
+            <p id='jobTitle'>Contract Voice Engineer 01/2010 through 05/2010</p>
+            <ul>
+              <p id='day2day'>Day to Day Responsibilities</p>
+              <li>Configure CUCM ver 6.0 for branch offices for financial institution. This included both extensions and users (DID and nonDID).</li>
+              <li>Update Cisco 3700/3800 series router configs to include Dial Peers and SRST lines. </li>
+              <li>Update MSSQL database with correct information used to provide IVR and Auto Attendant functions.</li>
+              <li>Manage onsite tech and service provider work including installation of cpe and number porting. Test with onsite tech confirming branch was ready for next business day</li>
+            </ul>
+            <ul>
+              <p id='Contributions'>Key Contributions</p>
+              <li>Part of team that migrated 3000 branches nationwide 3 months early and below budget.</li>
+            </ul>
+          </div>
+          <div class='table'>
+            <p><strong>Additional Experience:</strong></p>
+            <ul>
+              <li>Percipia Inc</li>
+              <li>Digital Cable</li>
+              <li>Telnet Corp</li>
+            </ul>
+            <ul>
+              <li>Tech Support Engineer</li>
+              <li>Cable TV Installer</li>
+              <li>PBX Support Technician</li>
+            </ul>
+            <ul>
+              <li>2004 through 2009</li>
+              <li>2003 through 2004</li>
+              <li>2000 through 2003</li>
+            </ul>
           </div>
         </div>
-        <button id = 'myBtn'>My Resume</button>
-        <div id = 'myResume' class ="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-              <div>
-                <p id ='companyName'>Centurylink</p>
-                <p id = 'jobTitle'>Lead Architect Tester 01/2014 through 12/2017 </p>
-                <ul>
-                  <p id = 'day2day'>Day to Day Responsibilities</p>
-                  <li>Worked in a simulated production environment in a lab facility.</li>
-                  <li>Participate in projects as Voice SME.</li>
-                  <li>Test and certify call scenarios including basic, Voicemail, Call Center, Receptionist, and SIP Trunking after software upgrades and patches.</li>
-                  <li>Write and Review maintenance procedures for production team</li>
-                  <li>Tier 3 support engineer for production team on troubleshooting production issues.</li>
-                  <li>Work with vendors that included, Broadsoft, Cisco, CTI Group, Metaswitch to resolve complex issues.</li>
-                </ul>
-                <ul>
-                  <p id = 'contributions'>Key Contributions</p>  
-                  <li>Evaluated and Implemented Call Recording platform that was HIPPA/PCI compliant.</li>
-                  <li>Implemented Hosted Call Center service on hosted VoIP platform.</li>
-                  <li>Tested, Certified and Supervised project that implemented SSL to secure 50K Polycom and Cisco cpe configuration files.</li>
-                  <li>Installed/Configured Cisco CM express on a 2800 series router with Audiocode SBC to test SIP trunks for lab. This reduced the reliability of 3rd part vendor and shortened test time for product. Did same thing with Adtran 7100 PBX with Adtran SBC.</li>
-                </ul>
-              </div>
-              <div>
-                <p id = 'companyName'>Lightyear Network Solutions</p>
-                <p id = 'jobTitle'>Senior Voice Engineer 07/2010 through 01/2014</p>
-                <ul>
-                  <p id = 'day2day'>Day to Day Responsibilities</p>
-                  <li>Provide Tier 3 support for Sylantro/Asterisk platform providing Service Provider services to residential and commercial customers. This includes troubleshooting complex production issues.</li>
-                  <li>Configure Cisco 2400 series IADs converting VoIP (SIP) to TDM handoff using T1, analog or PRI technology to customer pbx/key systems.</li>
-                  <li>Configure and Troubleshoot between company’s network and other SIP service providers for inbound/outbound calling. This includes 911 routing for customers.</li>
-                  <li>Maintain network security using Cisco ASA firewall and AcmePackets SBC.</li>
-                  <li>Maintain and administer MySQL database for CDR/Billing purposes.</li>
-                </ul>
-                <ul> 
-                  <p id = 'Contributions'>Key Contributions</p>
-                  <li>Tested, Certified and implemented company’s VoIP network conversion from Sylantro/Asterisk to FreeSwitch/Kamailio for both internal and external customers</li>
-                  <li>Improved network security using AcmePackets SBC reconfiguration.</li>
-                  <li>Migrated 300 business and 1700 customers from old Sylantro platform with minimal downtime for customers.</li>
-                  <li>Setup and trained Tier1 and Tier 2 maintenance group for troubleshooting VoIP (SIP).</li>
-                </ul>
-              </div>
-              <div>
-                <p id = 'companyName'>The Paragon Group</p>
-                <p id = 'jobTitle'>Contract Voice Engineer 01/2010 through 05/2010</p>
-                <ul>
-                  <p id = 'day2day'>Day to Day Responsibilities</p>
-                  <li>Configure CUCM ver 6.0 for branch offices for financial institution. This included both extensions and users (DID and nonDID).</li>
-                  <li>Update Cisco 3700/3800 series router configs to include Dial Peers and SRST lines. </li>
-                  <li>Update MSSQL database with correct information used to provide IVR and Auto Attendant functions.</li>
-                  <li>Manage onsite tech and service provider work including installation of cpe and number porting. Test with onsite tech confirming branch was ready for next business day</li>
-                </ul>
-                <ul> 
-                  <p id = 'Contributions'>Key Contributions</p>
-                  <li>Part of team that migrated 3000 branches nationwide 3 months early and below budget.</li>
-                </ul>
-              </div>
-              <div>
-                <p id = 'companyName'>The Paragon Group</p>
-                <p id = 'jobTitle'>Contract Voice Engineer 01/2010 through 05/2010</p>
-                <ul>
-                  <p id = 'day2day'>Day to Day Responsibilities</p>
-                  <li>Configure CUCM ver 6.0 for branch offices for financial institution. This included both extensions and users (DID and nonDID).</li>
-                  <li>Update Cisco 3700/3800 series router configs to include Dial Peers and SRST lines. </li>
-                  <li>Update MSSQL database with correct information used to provide IVR and Auto Attendant functions.</li>
-                  <li>Manage onsite tech and service provider work including installation of cpe and number porting. Test with onsite tech confirming branch was ready for next business day</li>
-                </ul>
-                <ul> 
-                  <p id = 'Contributions'>Key Contributions</p>
-                  <li>Part of team that migrated 3000 branches nationwide 3 months early and below budget.</li>
-                </ul>
-              </div>
-              <div class = 'table'>
-                <p ><strong>Additional Experience:</strong></p>
-                <ul>
-                  <li>Percipia Inc</li>
-                  <li>Digital Cable</li>
-                  <li>Telnet Corp</li>
-                </ul>
-                <ul> 
-                  <li>Tech Support Engineer</li>
-                  <li>Cable TV Installer</li>
-                  <li>PBX Support Technician</li>
-                </ul>
-                <ul> 
-                    <li>2004 through 2009</li>
-                    <li>2003 through 2004</li>
-                    <li>2000 through 2003</li>
-                  </ul>
-                </div>
+      </div>
+      <button id='myBtn-2'>My Skills</button>
+      <div id='mySkills' class="modal">
+        <div class="modal-content-2">
+          <span class="close-2">&times;</span>
+          <div class='table-2'>
+            <p id='skills'>Software & Hardware skills:</p>
+            <ul>
+              <li>SIP Trunking</li>
+              <li>PBX Systems</li>
+              <li>Voicemail/Auto Attd/IVR</li>
+              <li>Call Center</li>
+              <li>Call Accounting</li>
+              <li>Routers and Switches</li>
+              <li>LAN/WAN Technologies</li>
+              <li>Testing and Validation</li>
+              <li>Technical Support</li>
+              <li>Network Monitoring</li>
+              <li>System Installation, Configuration, and Upgrading</li>
+              <li>Database Management</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Some Python, Perl, and Bash scripting</li>
+            </ul>
+            <p id='vendors'>Vendors worked on:</p>
+            <ul>
+              <li>Cisco CME</li>
+              <li>FreeSwitch</li>
+              <li>Kamailio</li>
+              <li>Asterisk</li>
+              <li>Broadsoft</li>
+              <li>Mediatrix</li>
+              <li>Sylantro</li>
+              <li>Cisco Routers</li>
+              <li>Cisco Switches</li>
+              <li>Cisco IAD</li>
+              <li>Cisco ASA</li>
+              <li>Acme Packet SBC</li>
+              <li>MetaSwitch SBC</li>
+              <li>AudioCode SBC</li>
+              <li>Adtran Routers, Switches. SBC, and PBX</li>
+            </ul>
           </div>
         </div>
-        <button>My Skills</button>
-        <div id = 'MySkills' class ="modal">
-          <div class="modal-content">
-              <span class="close">&times;</span>
-          </div>
-        </div>
-        <a href = 'mailto:telnettech@gmail.com' style ='text-decoration:none;'><button>Contact Me</button></a>
+      </div>
+      <a href='mailto:telnettech@gmail.com' style='text-decoration:none;'><button>Contact Me</button></a>
     </div>
+  </div class='socialMedia'>
+  <a href='http://twitter.com/lou_telnettech' target="_blank"><i class="fab fa-twitter fa-3x">Twitter</i></a>
+  <a href='https://github.com/telnettech' target="_blank"><i class="fab fa-github-square fa-3x">GitHub</i></a>
+  <a href='mailto:telnettech@gmail.com'><i class="fas fa-envelope fa-3x">Email</i></a>
+  <a href='https://www.linkedin.com/in/telnettech' target="_blank"><i class="fab fa-linkedin-in fa-3x">LinkedIn</i></a>
   </div>
-  </div>
+
   <script src='js/jquery-3.3.1.min.js'></script>
   <script src='js/app.js'></script>
 </body>

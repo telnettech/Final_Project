@@ -100,3 +100,28 @@ window.addEventListener('click',function(event) {
 }); 
 
 //END MODAL BOX FOR "MY RESUME" BUTTON
+
+//START MODAL BOX FOR "MY SKILLS" BUTTON
+var modal2 = document.getElementById('mySkills');
+var btn2 = document.getElementById('myBtn-2');
+var span2 = document.getElementsByClassName("close-2")[0];
+
+// When the user clicks on the button, open the modal
+btn2.addEventListener('click',function() {
+    console.log('clicked');
+    modal2.style.display = "block";
+});
+
+// When the user clicks on <span> (x), close the modal
+span2.addEventListener('click',function() {
+    modal2.style.display = "none";
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener('click',function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}); 
+
+//END MODAL BOX FOR "MY SKILLS" BUTTON
