@@ -1,5 +1,18 @@
 # Final_Project
 
+11/5/2018
+  --Added My Skills Modal
+  --Added social media icons with font awesome
+  -moved hamburger menu to media query
+
+  Current Issues:
+   --Soical Media margin not correct
+
+  To Do List:
+    --Media Queries for Mobile approach
+    --Accessibility
+    
+
 10/24/2018
   --Resolved Hamburger Menu javascript.
   --Resolved Background image javascript.
