@@ -5,6 +5,10 @@ How to use:
 --Must have internet access for Social media icons to work
 --Can use Internet Explorer, Chrome or Firefox to display
 
+Hosted on Github at address
+
+https://telnettech.github.io/
+
 
 
 
