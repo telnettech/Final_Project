@@ -1,5 +1,17 @@
 # Final_Project
 
+How to use:
+
+--Must have internet access for Social media icons to work
+--Can use Internet Explorer, Chrome or Firefox to display
+
+
+
+
+11/11/2018
+
+PROJECT COMPLETE!!!!!!!
+
 11/5/2018
   --Added My Skills Modal
   --Added social media icons with font awesome

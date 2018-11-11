@@ -51,7 +51,7 @@ body {
 #clock{
     background-color:#fef200;
     font-family: sans-serif;
-    font-size:30px;
+    font-size: 25px;
     color:#231f20;
 }
 
@@ -104,6 +104,10 @@ body {
   overflow-y: initial !important;
   border: 1px solid #fff;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content p {
+  font-weight: bold;
 }
 
 
@@ -169,14 +173,20 @@ body {
 
 /* Social Media Links Styling*/
 
-.socialMedia{
-  margin-top: 45px;
+footer{
+  padding-top: 75px;
+ 
+}
+
+.table-3{
+  dispay: flex;
+  flex-direction: row;
 }
 
 .fa-github-square{
   margin-left:75px;
   font-size: .25rem;
-  background-color: #fef200;
+  background-color: #fff;
   color: #231f20;
 }
 
@@ -188,7 +198,7 @@ body {
 .fa-twitter{
   margin-left: 40px;
   font-size: .25rem;
-  background-color: #fef200;
+  background-color: #fff;
   color: #231f20;
 }
 .fa-twitter:hover, .fa-twitter:focus {
@@ -199,7 +209,7 @@ body {
 .fa-envelope{
   margin-left: 40px;
   font-size: .25rem;
-  background: #fef200;
+  background: #fff;
   color: #231f20;
 }
 
@@ -211,7 +221,7 @@ body {
 .fa-linkedin-in{
   margin-left: 40px;
   font-size: .15rem;
-  background-color: #fef200;
+  background-color: #fff;
   color: #231f20;
 }
 
@@ -226,73 +236,154 @@ body {
       Media Queries
    =====================*/
   /* Smartphones (portrait and landscape) ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  @media only screen and (min-device-width : 360px) and (max-device-width : 480px){
+  
     /* Styles */
+
+    html{
+      height: 100%;
+      width: 100%;
+    }
+
+    body{
+      background-position: center;
+    }
+
+    #pageTitle {
+      font-size: 1.5rem;
+    }
+
+    #bioBox{
+      /* position: relative; */
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    #personalPhoto{
+      margin-left: 75px;
+      width: 50%;
+    }
+
+    #aboutMe {
+      clear: left;
+      font-size: smaller;
+      margin-left: 15px;
+      width: 85%;
+      height: auto;   /*fixes background-color box being too long */
+      /* position: absolute;
+      bottom: 0px; */
+    }
+
+    #nav{
+      margin-right : 15px;
+    }
+
+    #nav button {
+      float: right;
+      display: table-header-group;
+      font-size: 85%;
+      font-weight: bold;
+      padding: 5px 80px 8px 8px;
+    }
+
+    #clockdate{
+      margin-left: 15px;
+    }
+
+    #clock{
+      font-size: 20px;
+    }
+  
+    #date {
+        font-size:18px;
+    }
+
+    .modal{
+      margin: 1vh;
+      height: 96vh;
+    }
+
+    .modal-content{
+      margin-top: 2%;
+      margin-left: 15px;
+      padding: 1px;
+    }
+
+    .table{
+      visibility: hidden;
+    }
+
+    .modal-content-2{
+      margin-top: 2%;
+      margin-left: 15px;
+      padding: 1px;
+    }
+
+    .table-2{
+      display: block;
+    }
+
+
+    footer{
+      padding-top: 15px;
+      font-size: .35rem;
+    }
+
+    .fab{
+      margin-left: 15px;
+    }
+
+    .fa-envelope{
+      margin-left: 15px;
+    }
+
   }
 
-  /* Smaall Screens to 768px ----------- */
-  @media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+  /* Small Screens like Ipad and Kindle Fire ----------- */
+  @media only screen and (min-device-width: 480px) and (max-device-width : 801px) {
+
     /* Styles */
-    /* HAMBURGER MENU STYLE https://www.youtube.com/watch?v=JoU-Tv6jIUI */
+    
+    #pageTitle {
+      font-size: 1.5rem;
+    }
 
-.hamburgerMenu{
-  height: 75px;
-  width: 75px;
-  position: relative;
-  border: 1px solid #fff;
-  background-color: #fef200;
-  top: 10%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
+    #aboutMe {
+      float: left;
+      font-size: medium;
+      width: 65%;
+      height: 85%;   /* fixes background-color box being too long */
+      margin-bottom: -35px;
+    }
+    
+    #personalPhoto {
+      border-radius: 50%;
+      width: 65%;
+      margin-left: 45px;
+    }
 
-.hamburgerIcon{
-  height: 10px;
-  width: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50px;
-  background-color: #231f20;
-  transform: translate(-50%,-50%) rotate(0deg);
+    #nav button {
+      font-size: 85%;
+      font-weight: bold;
+      padding: 5px 80px 8px 8px;
+    }
 
-}
-
-.hamburgerIcon::before, .hamburgerIcon::after{
-  content:"";
-  position: absolute;
-  height: inherit;
-  border-radius: inherit;
-  background-color: inherit;
-  margin: auto;
-  width: 50%;
-}
-.hamburgerIcon::before{
-  top: -20px;
-  left: 15px;
-  transform-origin: right;
-}
-.hamburgerIcon::after{
-  bottom: -20px;
-  right: 15px;
-  transform-origin: right;
-}
-
-.open{
-  transform: translate( -50%, -50%) rotate(135deg);
-
-}
-.open::before{
-  top: 0;
-  left: -29px;
-  transform: translateX(100%) rotate(-90deg);
-}
-.open::after{
-  bottom: 30px;
-  right: -2px;
-  transform: translateX(-100%) rotate(-90deg);
-}
+    #clock{
+      font-size: 10px;
   }
+  
+  #date {
+      font-size:8px;
+  }
+
+  footer{
+    padding-top: 35px;
+    margin-left:35px;
+    font-size: .5rem;
+   
+  }
+}
 
   /* Desktop to 1024 ----------- */
   /* @media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {

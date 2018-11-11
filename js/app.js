@@ -62,17 +62,6 @@ body.css('background-image', backgrounds[0]);
 // END BACKGROUND IMAGE
 
 
-// START HAMBURGER MENU  https://www.youtube.com/watch?v=JoU-Tv6jIUI
-
-$(document).ready(function(){
-    $('.hamburgerIcon').click(function(){
-        console.log(this);
-        $(this).toggleClass('open')
-    });
-});
-
-// END HAMBURGER MENU
-
 // START MODAL BOX FOR "MY RESUME" BUTTON
 // used this reference: https://www.w3schools.com/howto/howto_css_modals.asp
 // and modified per MDN for the Event Listener
@@ -83,7 +72,6 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.addEventListener('click',function() {
-    console.log('clicked');
     modal.style.display = "block";
 });
 
