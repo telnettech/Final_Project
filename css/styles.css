@@ -1,14 +1,16 @@
 /* Content Styles */
 
 body {
-  /* background-image: url(../img/markus-spiske-357131-unsplash.jpg); */
   background-repeat:no-repeat;
   background-size: cover;
+  background-color: #6c6063;
+  background-blend-mode: overlay;
 }
 
 #pageTitle {
   text-align: center;
   font-size: 4.5rem;
+  text-shadow: 10px, 10px,#231f20;
   color: #fff;
 }
 
@@ -21,6 +23,9 @@ body {
 #aboutMe {
   background-color: #fef200;
   border: 1px solid white;
+  border-radius: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
   float: left;
   font-size: x-large;
   width: 33%;
@@ -179,8 +184,12 @@ footer{
 }
 
 .table-3{
-  dispay: flex;
+  display: flex;
   flex-direction: row;
+}
+
+.socialMedia{
+  margin-left: 150px;
 }
 
 .fa-github-square{
